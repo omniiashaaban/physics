@@ -1,0 +1,6 @@
+@physics_HostAddress = http://localhost:5153
+
+GET {{physics_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
