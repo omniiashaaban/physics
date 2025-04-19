@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 public class User 
 {
     public int Id { get; set; } //
+
+    public String UserType { get; set; }
     public string NationalId { get; set; } //
     [Required]
     [MaxLength(100)]
@@ -13,9 +15,6 @@ public class User
     public string PhoneNumber   {get; set;} //
 
     public DateTime CreatedAt { get; set; } //
-
-    public int DeviceId { get; set; } //
-    public Device Device { get; set; } //
 
     public ICollection<Maintenance> Maintenances { get; set; }
 
